@@ -31,7 +31,7 @@ const ThemeToggle = () => {
 	return (
 		<button
 			onClick={toggleTheme}
-			className={cn('fixed max-sm:hidden top-3 right-5 z-50 p-2 rounded-full transition-colors duration-300 cursor-pointer', 'focus:outline-hidden')}
+			className={cn('fixed bottom-3 right-2 z-50 p-2 rounded-full transition-colors duration-300 cursor-pointer', 'focus:outline-hidden')}
 		>
 			{isDarkMode ? (
 				<Sun className='h-6 w-6 text-yellow-300' />

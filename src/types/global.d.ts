@@ -1,3 +1,5 @@
+import { LucideIcon } from 'lucide-react';
+
 declare global {
 	type StarProps = {
 		id: number;
@@ -19,8 +21,11 @@ declare global {
 
 	type navLink = {
 		name: string;
-		href: string;
+		href: sectionId;
+		icon: LucideIcon;
 	};
+
+	type sectionId = 'hero' | 'about' | 'skills' | 'projects' | 'contact'
 }
 
 export {};

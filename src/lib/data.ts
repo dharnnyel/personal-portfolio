@@ -1,9 +1,21 @@
+import {
+	Code,
+	Home,
+	Layout,
+	MessageCircle,
+	User2,
+} from 'lucide-react';
+
 const navLinks: navLink[] = [
-	{ name: 'Home', href: '#hero' },
-	{ name: 'About', href: '#about' },
-	{ name: 'Skills', href: '#skills' },
-	{ name: 'Projects', href: '#projects' },
-	{ name: 'Contact', href: '#contact' },
+	{ name: 'Home', href: 'hero', icon: Home },
+	{ name: 'About', href: 'about', icon: User2 },
+	{ name: 'Skills', href: 'skills', icon: Code },
+	{ name: 'Projects', href: 'projects', icon: Layout },
+	{
+		name: 'Contact',
+		href: 'contact',
+		icon: MessageCircle,
+	},
 ];
 
 export { navLinks };
