@@ -30,7 +30,7 @@ const Navbar: React.FC<NavProps> = props => {
 
 	return (
 		<nav
-			className={`fixed right-0 z-50 flex flex-col py-2 gap-16 justify-between items-center md:pt-16`}
+			className={`fixed right-0 z-40 flex flex-col py-2 gap-12 md:justify-center h-full items-center`}
 		>
 			<button
 				onClick={() => setIsMenuOpen(prev => !prev)}
@@ -73,7 +73,6 @@ const Navbar: React.FC<NavProps> = props => {
 					))}
 				</div>
 			</div>
-			{/* <ThemeToggle /> */}
 		</nav>
 	);
 };
