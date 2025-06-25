@@ -19,13 +19,26 @@ declare global {
 		animationDuration: number;
 	};
 
-	type navLink = {
+	type NavLink = {
 		name: string;
 		href: sectionId;
 		icon: LucideIcon;
 	};
 
-	type sectionId = 'hero' | 'about' | 'skills' | 'projects' | 'contact'
+	type SectionId =
+		| 'hero'
+		| 'about'
+		| 'skills'
+		| 'projects'
+		| 'contact';
+
+	type Category = 'frontend' | 'backend' | 'tools';
+
+	type Skills = {
+		name: string;
+		level: number;
+		category: Category;
+	};
 }
 
 export {};

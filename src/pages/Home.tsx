@@ -2,6 +2,7 @@ import {
 	About,
 	HeroSection,
 	Navbar,
+	Skills,
 	StarBackground,
 	ThemeToggle,
 } from '@/components';
@@ -22,6 +23,7 @@ const Home = () => {
 			<main>
 				<HeroSection />
 				<About />
+				<Skills />
 			</main>
 			{/* Footer */}
 		</div>

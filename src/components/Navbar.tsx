@@ -2,19 +2,18 @@ import { navLinks } from '@/lib/data';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import ThemeToggle from './ThemeToggle';
+import { useNavigate } from 'react-router-dom';
 
 type NavProps = {};
 
 const Navbar: React.FC<NavProps> = props => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isActive, setIsActive] =
-		useState<sectionId>('hero');
+		useState<SectionId>('hero');
 
 	const navigate = useNavigate();
 
-	const handleClick = (id: sectionId) => {
+	const handleClick = (id: SectionId) => {
 		setIsActive(id);
 		if (id === 'hero') {
 			navigate('/');
