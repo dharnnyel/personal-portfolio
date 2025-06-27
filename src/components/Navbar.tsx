@@ -40,7 +40,7 @@ const Navbar: React.FC<NavProps> = props => {
 			</button>
 			<div
 				className={cn(
-					'backdrop-filter backdrop-blur-xs bg-gray-800 dark:bg-white/10 shadow-lg/50 rounded-full h-fit transform transition-transform duration-300 md:translate-x-0 md:mr-2',
+					'glass rounded-full h-fit transform transition-transform duration-300 md:translate-x-0 md:mr-2',
 					isMenuOpen
 						? 'translate-x-0 mr-1'
 						: 'translate-x-full'

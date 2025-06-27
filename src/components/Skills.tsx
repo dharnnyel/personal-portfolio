@@ -61,7 +61,7 @@ const Skills: React.FC<SkillsProps> = props => {
 						return (
 							<div
 								key={index}
-								className='backdrop-filter backdrop-blur-xs bg-gray-200 dark:bg-white/10 p-6 rounded-lg shadow-xs card-hover'
+								className='glass p-6 rounded-lg shadow-sm card-hover'
 							>
 								<div className='text-left mb-4'>
 									<h3 className='font-semibold text-lg'>

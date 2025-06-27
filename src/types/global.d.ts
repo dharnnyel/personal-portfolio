@@ -39,6 +39,16 @@ declare global {
 		level: number;
 		category: Category;
 	};
+
+	type Projects = {
+		id: number;
+		title: string;
+		description: string;
+		image: string;
+		tags: string[];
+		demoUrl: string;
+		githubUrl: string;
+	}
 }
 
 export {};

@@ -36,4 +36,40 @@ const skills: Skills[] = [
 	{ name: 'VS Code', level: 90, category: 'tools' },
 ];
 
-export { navLinks, skills };
+const projects: Projects[] = [
+	{
+		id: 1,
+		title: 'Video Calling/Streaming Platform',
+		description:
+			'An easy to use web app for scheduling, making, and receiving calls',
+		image: 'projects/xoom.png',
+		tags: [
+			'React',
+			'Next.js',
+			'TypeScript',
+			'TailwindCSS',
+			'Clerk',
+			'Stream API',
+		],
+		demoUrl: 'https://xoom-clone.vercel.app/',
+		githubUrl: 'https://github.com/dharnnyel/xoom',
+	},
+	{
+		id: 2,
+		title: 'Personal Portfolio',
+		description:
+			'A personal portfolio website showcasing my projects and skills',
+		image: 'projects/portfolio.png',
+		tags: [
+			'React',
+			'TypeScript',
+			'TailwindCSS',
+			'React Router',
+		],
+		demoUrl: 'https://xoom-clone.vercel.app/',
+		githubUrl:
+			'https://github.com/dharnnyel/personal-portfolio',
+	},
+];
+
+export { navLinks, skills, projects };

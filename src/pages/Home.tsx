@@ -2,6 +2,7 @@ import {
 	About,
 	HeroSection,
 	Navbar,
+	Projects,
 	Skills,
 	StarBackground,
 	ThemeToggle,
@@ -24,6 +25,7 @@ const Home = () => {
 				<HeroSection />
 				<About />
 				<Skills />
+				<Projects />
 			</main>
 			{/* Footer */}
 		</div>
