@@ -113,6 +113,15 @@
 	}
 }
 
+@layer utilities {
+	input:-webkit-autofill {
+		-webkit-box-shadow: 0 0 0px 1000px var(--color-background) inset !important;
+		-webkit-text-fill-color: var(--color-foreground) !important;
+		transition: background-color 5000s ease-in-out 0s !important;
+    background-color: var(--color-background) !important;
+	}
+}
+
 @utility container {
 	margin-inline: auto;
 	padding-inline: 2rem;
@@ -155,7 +164,7 @@
 }
 
 @utility glass {
-	@apply backdrop-filter backdrop-blur-xs bg-gray-200 dark:bg-white/10 shadow-md
+	@apply backdrop-filter backdrop-blur-xs bg-gray-200 dark:bg-white/10 shadow-md;
 }
 
 @utility cosmic-button {
@@ -176,5 +185,5 @@
 	max-width: 100%;
 	margin: 0 auto;
 	padding: 0;
-  text-align: center;
+	text-align: center;
 }

@@ -1,5 +1,6 @@
 import {
 	About,
+	Contact,
 	HeroSection,
 	Navbar,
 	Projects,
@@ -26,6 +27,7 @@ const Home = () => {
 				<About />
 				<Skills />
 				<Projects />
+				<Contact />
 			</main>
 			{/* Footer */}
 		</div>

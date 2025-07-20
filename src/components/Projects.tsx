@@ -8,9 +8,9 @@ import {
 } from 'lucide-react';
 import React from 'react';
 
-type Props = {};
+type ProjectProps = {};
 
-const Projects = (props: Props) => {
+const Projects: React.FC<ProjectProps> = props => {
 	return (
 		<section
 			id='projects'
@@ -45,7 +45,7 @@ const Projects = (props: Props) => {
 							<div className='p-6'>
 								<div className='flex flex-wrap gap-2 mb-4'>
 									{project.tags.map(tag => (
-										<span className='px-2 py-1 text-[8px] font-medium rounded-full bg-primary/20 border border-primary/60'>
+										<span className='px-2 py-1 text-[8px] font-medium rounded-full bg-primary/20 border border-primary/60' key={tag}>
 											{tag}
 										</span>
 									))}
@@ -81,7 +81,13 @@ const Projects = (props: Props) => {
 				</div>
 
 				<div className='text-center mt-12'>
-					<a href='https://github.com/dharnnyel' target='_blank' className='flex items-center w-fit cosmic-button gap-2 mx-auto'>Check my Github <ArrowRight size={16} /></a>
+					<a
+						href='https://github.com/dharnnyel'
+						target='_blank'
+						className='flex items-center w-fit cosmic-button gap-2 mx-auto'
+					>
+						Check my Github <ArrowRight size={16} />
+					</a>
 				</div>
 			</div>
 		</section>

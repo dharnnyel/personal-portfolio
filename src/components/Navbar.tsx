@@ -13,6 +13,7 @@ const Navbar: React.FC<NavProps> = props => {
 
 	const navigate = useNavigate();
 
+
 	const handleClick = (id: SectionId) => {
 		setIsActive(id);
 		if (id === 'hero') {
@@ -56,7 +57,7 @@ const Navbar: React.FC<NavProps> = props => {
 							className={cn(
 								'cursor-pointer flex flex-col gap-2 justify-center items-center rounded-full h-10 w-10',
 								isActive === link.href
-									? 'bg-border'
+									? 'bg-primary/40'
 									: 'bg-transparent'
 							)}
 							onClick={e => {
