@@ -8,7 +8,7 @@ import {
 	Send,
 	Twitter,
 } from 'lucide-react';
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 type ContactProps = {};
