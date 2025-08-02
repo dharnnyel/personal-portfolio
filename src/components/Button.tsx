@@ -1,6 +1,5 @@
-import { cn } from '@/lib/utils';
 import { Toast } from '@base-ui-components/react';
-import React, { useState } from 'react';
+import React from 'react';
 
 type ButtonProps = {
 	children: React.ReactNode;
@@ -14,10 +13,8 @@ const Button: React.FC<ButtonProps> = ({
   userEmail
 }) => {
   const toastManager = Toast.useToastManager();
-  const [count, setCount] = useState(0);
   
   const createToast = () => {
-    setCount(prev => prev + 1);
 		toastManager.add({
 			title: `Email sent successfully`,
 			description: `An email was sent to ${userEmail}`,

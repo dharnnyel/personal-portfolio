@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 type SkillsProps = {};
 
-const Skills: React.FC<SkillsProps> = props => {
+const Skills: React.FC<SkillsProps> = () => {
 	const categories = [
 		'All',
 		...Array.from(

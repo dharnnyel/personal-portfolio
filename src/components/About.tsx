@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 type AboutProps = {};
 
-const About: React.FC<AboutProps> = props => {
+const About: React.FC<AboutProps> = () => {
 	return (
 		<section
 			id='about'

@@ -4,7 +4,7 @@ import React from 'react';
 
 type ToastListProps = {};
 
-const ToastList: React.FC<ToastListProps> = props => {
+const ToastList: React.FC<ToastListProps> = () => {
 	const { toasts } = Toast.useToastManager();
 
 	return toasts.map(toast => (

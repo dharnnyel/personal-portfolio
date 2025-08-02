@@ -8,7 +8,7 @@ import {
 	Send,
 	Twitter,
 } from 'lucide-react';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Button from './Button';
 import { Toast } from '@base-ui-components/react';
@@ -16,7 +16,7 @@ import ToastList from './ToastList';
 
 type ContactProps = {};
 
-const Contact: React.FC<ContactProps> = props => {
+const Contact: React.FC<ContactProps> = () => {
 	const form = useRef<HTMLFormElement>(null);
 
 	const email =

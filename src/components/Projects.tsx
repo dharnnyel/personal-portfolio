@@ -1,16 +1,14 @@
 import { projects } from '@/lib/data';
 import {
 	ArrowRight,
-	Code,
 	ExternalLink,
-	ExternalLinkIcon,
 	Github,
 } from 'lucide-react';
 import React from 'react';
 
 type ProjectProps = {};
 
-const Projects: React.FC<ProjectProps> = props => {
+const Projects: React.FC<ProjectProps> = () => {
 	return (
 		<section
 			id='projects'

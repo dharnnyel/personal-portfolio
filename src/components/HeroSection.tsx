@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 type HeroSectionProps = {};
 
-const HeroSection: React.FC<HeroSectionProps> = props => {
+const HeroSection: React.FC<HeroSectionProps> = () => {
 	return (
 		<section
 			id='hero'

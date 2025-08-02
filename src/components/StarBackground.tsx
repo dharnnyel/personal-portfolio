@@ -4,7 +4,7 @@ type StarBackgroundProps = {};
 
 const StarBackground: React.FC<
 	StarBackgroundProps
-> = props => {
+> = () => {
 	const [stars, setStars] = useState<StarProps[]>([]);
 	const [meteors, setMeteors] = useState<MeteorProps[]>([]);
 

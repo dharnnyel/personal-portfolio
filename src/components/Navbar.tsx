@@ -10,7 +10,7 @@ Tooltip;
 
 type NavProps = {};
 
-const Navbar: React.FC<NavProps> = props => {
+const Navbar: React.FC<NavProps> = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isActive, setIsActive] = useState<
 		SectionId | undefined
