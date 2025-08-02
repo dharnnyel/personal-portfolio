@@ -8,19 +8,26 @@ import {
 	Send,
 	Twitter,
 } from 'lucide-react';
-import React, { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Button from './Button';
+import { Toast } from '@base-ui-components/react';
+import ToastList from './ToastList';
 
 type ContactProps = {};
 
 const Contact: React.FC<ContactProps> = props => {
 	const form = useRef<HTMLFormElement>(null);
 
+	const email =
+		(form.current?.elements.namedItem('email') as HTMLInputElement | null)?.value ?? '';
+
 	const sendEmail = (e: React.FormEvent): void => {
 		e.preventDefault();
 		console.log('sending email...');
-
+		
 		if (form.current) {
+			console.log(form)
 			emailjs
 				.sendForm(
 					`${import.meta.env.VITE_SERVICE_ID}`,
@@ -39,7 +46,10 @@ const Contact: React.FC<ContactProps> = props => {
 						);
 					},
 					error => {
-						console.log('Failed to send email:', error.text);
+						console.log(
+							'Failed to send email:',
+							error.text
+						);
 					}
 				);
 		}
@@ -184,16 +194,22 @@ const Contact: React.FC<ContactProps> = props => {
 									placeholder='Your Message...'
 								/>
 							</div>
-
-							<button
-								type='submit'
-								className={cn(
-									'cosmic-button w-full flex items-center justify-center gap-2'
-								)}
-							>
-								Send Message
-								<Send size={16} />
-							</button>
+							<Toast.Provider>
+								<Button
+									className={cn(
+										'cosmic-button w-full flex items-center justify-center gap-2 cursor-pointer'
+									)}
+									userEmail={email}
+								>
+									Send Message
+									<Send size={16} />
+								</Button>
+								<Toast.Portal>
+									<Toast.Viewport className='fixed z-10 top-auto right-[1rem] bottom-[1rem] mx-auto flex w-[250px] sm:right-[2rem] sm:bottom-[2rem] sm:w-[300px]'>
+										<ToastList />
+									</Toast.Viewport>
+								</Toast.Portal>
+							</Toast.Provider>
 						</form>
 					</div>
 				</div>
