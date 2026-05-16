@@ -26,10 +26,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
 						</span>
 					</h1>
 					<p className='text-[15px] md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3'>
-						I create beautiful user experiences with modern
-						web technologies. Specializing in front-end
-						development, I build pixel-perfect interfaces
-						that are very functional.
+					 Fullstack Laravel & React developer focused on scalable backend systems, secure authentication flows, admin dashboards and modern responsive frontend experiences.
 					</p>
 
 					<div className='pt-4 opacity-0 animate-fade-in-delay-4'>

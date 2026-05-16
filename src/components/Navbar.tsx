@@ -6,8 +6,6 @@ import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import ArrowSvg from './ArrowSvg';
 
-Tooltip;
-
 type NavProps = {};
 
 const Navbar: React.FC<NavProps> = () => {

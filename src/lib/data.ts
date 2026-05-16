@@ -21,14 +21,17 @@ const navLinks: NavLink[] = [
 const skills: Skills[] = [
 	{ name: 'HTML/CSS', level: 95, category: 'frontend' },
 	{ name: 'TailwindCSS', level: 90, category: 'frontend' },
+	{ name: 'Blade', level: 90, category: 'frontend' },
+	{ name: 'Livewire', level: 90, category: 'frontend' },
 	{ name: 'JavaScript', level: 90, category: 'frontend' },
 	{ name: 'TypeScript', level: 75, category: 'frontend' },
 	{ name: 'React', level: 70, category: 'frontend' },
 	{ name: 'Next.js', level: 70, category: 'frontend' },
-	{ name: 'React Native', level: 50, category: 'frontend' },
 
+	{ name: 'Laravel', level: 80, category: 'backend' },
 	{ name: 'Node.js', level: 50, category: 'backend' },
 	{ name: 'Express', level: 50, category: 'backend' },
+	{ name: 'MySQL', level: 60, category: 'backend' },
 	{ name: 'MongoDB', level: 40, category: 'backend' },
 
 	{ name: 'Git/GitHub', level: 80, category: 'tools' },

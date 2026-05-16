@@ -23,21 +23,17 @@ const About: React.FC<AboutProps> = () => {
 				<div className='grid grid-cols-1 md:grid-cols-2 gap-12 items-center'>
 					<div className='space-y-6'>
 						<h3 className='text-2xl font-semibold'>
-							Passionate Web Developer
+						Fullstack Engineer with a Product Mindset
 						</h3>
 
 						<p className='text-muted-foreground text-[15px] sm:text-base'>
-							I specialize in creating responsive,
+							I specialize in creating secure, responsive,
 							accessible, and performant web applications
 							using modern web technologies.
 						</p>
 
 						<p className='text-muted-foreground text-[15px] sm:text-base'>
-							I'm passionate about creating elegant
-							solutions to complex problems, and I'm
-							currently learning new technologies and
-							techniques to stay at the forefront of the
-							ever-evolving web landscape.
+						I build production-ready web applications using Laravel, Blade, Livewire, React, TailwindCSS and TypeScript. My focus is creating scalable backend systems while delivering intuitive frontend experiences for users.
 						</p>
 
 						<div className='flex flex-col sm:flex-row gap-4 pt-4 justify-center'>
@@ -48,7 +44,7 @@ const About: React.FC<AboutProps> = () => {
 								Get In Touch
 							</Link>
 							<a
-								href='/cv.pdf'
+								href='/cv/ubah_chukwuemeka_daniel.pdf'
 								download='Ubah_Chukwuemeka_Daniel-CV.pdf'
 								className='px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300 flex items-center justify-center gap-3'
 							>
@@ -65,12 +61,11 @@ const About: React.FC<AboutProps> = () => {
 								</div>
 								<div className='text-left'>
 									<h4 className='font-semibold text-lg'>
-										Web Development
+										Fullstack Development
 									</h4>
 									<p className='text-muted-foreground'>
-										Creating responsive websites and web
-										applications with modern frontend
-										frameworks
+										Creating secure and responsive websites and web
+										applications with modern technologies
 									</p>
 								</div>
 							</div>
